@@ -1,0 +1,205 @@
+/* Importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark: black;
+    --light: white;
+}
+
+body {
+    background-color: black;
+    color: var(--light);
+    font-family: 'Poppins', Courier, monospace;
+    overflow-y: auto;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red, pink);
+    clip-path: circle(30% at right 70%);
+    z-index: -2;
+}
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 35%;
+    background: linear-gradient(blue, green);
+    clip-path: circle(20% at 10% 10%);
+    z-index: -2;
+}
+
+
+/* Input Section Styling */
+.inputContainer {
+    /* width: 90vw; */
+    margin: 20px auto;
+    padding: 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: rgba(225, 225, 225, 0.1);
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    border-left: 1px solid rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.inputContainer h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.titleInp label{
+    font-size: 20px;
+    text-align: center;
+    
+}
+.titleInp input{
+    font-family: 'Poppins', Courier, monospace;
+    width: 41vw;
+    height: 35px;
+    background: none;
+    border: 2px solid rgba(225, 225, 225, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 1px grey;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 0px 10px;
+    color: white;
+    outline: none;
+}
+
+.descInp label {
+    font-size: 20px;
+    text-align: center;
+}
+.descInp textarea {
+    font-family: 'Poppins', Courier, monospace;
+    color: white;
+    width: 41vw;
+    height: 110px;
+    background: none;
+    border: 2px solid rgba(225, 225, 225, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 1px grey;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    cursor: pointer;
+    width: 8vw;
+    font-size: 25px;
+    border: 2px solid rgba(225, 225, 225, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+    background: none;
+    outline: none;
+    color: rgba(225, 225, 225, 0.9);
+}
+.btn:hover {
+    color: black;
+    background-color: rgba(225, 225, 225, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-out;
+}
+
+
+
+
+
+/* Notes Section Styling */
+.outputContainer {
+    min-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.outputContainer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+    pointer-events: none;
+}
+
+.outputs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80vw;
+    /* border: 2px solid red; */
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.notes {
+    width: auto;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    margin: 30px;
+    /* flex-wrap: wrap; */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: rgba(225, 225, 225, 0.1);
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    border-left: 1px solid rgba(225, 225, 225, 0.5);
+    /* overflow: hidden; */
+    /* overflow-y: auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    /* height: auto; */
+}
+
+.notes h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.notes p {
+    margin-bottom: 10px;
+}
+.notesbtn {
+    cursor: pointer;
+    width: 5vw;
+    font-size: 19px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    background: rgba(225, 225, 225, 0.7);
+    outline: none;
+}
+.notesbtn:hover {
+    background: rgba(225, 225, 225);
+    transition: 0.3s ease-in-out;
+}

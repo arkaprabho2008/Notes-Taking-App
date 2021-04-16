@@ -1,0 +1,16 @@
+{
+  "name": "notes-taking-app",
+  "version": "1.0.0",
+  "description": "This is my notes taking app using pure JavaScript and backend using node.js",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arka",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
